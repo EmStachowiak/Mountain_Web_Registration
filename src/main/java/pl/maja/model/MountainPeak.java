@@ -8,7 +8,7 @@ public class MountainPeak {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String mountainPeak;
+    private String name;
     private int height;
     private int verticalGain;
     private float distance;
@@ -21,7 +21,7 @@ public class MountainPeak {
     }
 
     public MountainPeak(String mountainPeak, int height, int verticalGain, float distance) {
-        this.mountainPeak = mountainPeak;
+        this.name = mountainPeak;
         this.height = height;
         this.verticalGain = verticalGain;
         this.distance = distance;
@@ -32,12 +32,12 @@ public class MountainPeak {
         return id;
     }
 
-    public String getMountainPeak() {
-        return mountainPeak;
+    public String getName() {
+        return name;
     }
 
-    public void setMountainPeak(String mountainPeak) {
-        this.mountainPeak = mountainPeak;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getHeight() {
@@ -64,11 +64,19 @@ public class MountainPeak {
         this.distance = distance;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "MountainPeak{" +
                 "id=" + id +
-                ", mountainPeak='" + mountainPeak + '\'' +
+                ", mountainPeak='" + name + '\'' +
                 ", height=" + height +
                 ", verticalGain=" + verticalGain +
                 ", distance=" + distance +

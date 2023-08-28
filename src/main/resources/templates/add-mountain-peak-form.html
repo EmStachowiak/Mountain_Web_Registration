@@ -1,0 +1,19 @@
+<html>
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<h3> ADD MOUNTAIN PEAK </h3>
+
+<form th:action="@{/addPeak}" method="post">
+    <label for="nickName">Select User:</label>
+    <select id="nickName" name="nickName"> <!-- Dodane pole wyboru nickName -->
+        <option th:each="user : ${users}" th:value="${user.nickName}" th:text="${user.nickName}"></option>
+    </select>
+    <br>
+    Mountain Peak Name: <input type="text" name="name">
+    Height: <input type="number" name="height">
+    Vertical Gain: <input type="number" name="verticalGain">
+    Distance: <input type="number" name="distance">
+    <input type="submit" value="Add Mountain Peak">
+</form>
+
+</body>
+</html>

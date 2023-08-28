@@ -16,6 +16,10 @@ public class MountainPeakService {
     public MountainPeak getMountainPeakById(int id) {
         return this.mountainPeakRepository.getReferenceById(id);
     }
+
+    public void addMountainPeak(MountainPeak mountainPeak) {
+        mountainPeakRepository.save(mountainPeak);
+    }
 }
 
 
