@@ -1,11 +1,22 @@
 <html>
 <body xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <style>
+        .center-text {
+            text-align: center;
+            background-color: #FFCCFF;
+            padding: 20px; }
+    </style>
+</head>
+<div class="center-text">
 <h3> USER ADDED </h3>
 
 <p>User id: <span th:text="${user.id}"></span></p>
 <p>Nick name: <span th:text="${user.nickName}"></span></p>
 <p>E-mail: <span th:text="${user.email}"></span></p>
 <p>Age: <span th:text="${user.age}"></span></p>
+</div>
 
 </body>
 </html>

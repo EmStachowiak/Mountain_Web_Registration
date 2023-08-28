@@ -1,17 +1,26 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <style>
+        .center-text {
+            text-align: center;
+            background-color: #FFCCFF;
+            padding: 20px; }
+    </style>
+</head>
+
 <body>
-<h3>ADD USER</h3>
-<br/>
-<form action="addUser" method="post">
 
-    Nick name <input type="text" name="nickName" />
-    E-mail <input type="text" name="email" />
-    Age <input type="number" name="age" />
+<div class="center-text">
+    <h3>ADD USER</h3>
+    <br/>
+    <form action="addUser" method="post">
+        Nick name <input type="text" name="nickName" /><br/>
+        E-mail <input type="text" name="email" /><br/>
+        Age <input type="number" name="age" /><br/>
+        <input type="submit" value="ADD" />
+    </form>
+</div>
 
-    <input type="submit" value="Submit" />
-
-
-</form>
 </body>
 </html>
-
