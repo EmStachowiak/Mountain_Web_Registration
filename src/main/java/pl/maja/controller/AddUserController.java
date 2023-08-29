@@ -19,16 +19,6 @@ public class AddUserController {
         this.userService = userService;
     }
 
-//    @GetMapping
-//    public String handleGetRequest() {
-//        return "MAANSN";
-//    }
-
-//    @GetMapping
-//    public String handle() {
-//        return "test";
-//    }
-
     @GetMapping
     public String handleGetRequest() {
         return "add-user";
