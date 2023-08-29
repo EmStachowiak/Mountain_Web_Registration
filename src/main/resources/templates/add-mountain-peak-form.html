@@ -4,7 +4,7 @@
 
 <form th:action="@{/addPeak}" method="post">
     <label for="nickName">Select User:</label>
-    <select id="nickName" name="nickName"> <!-- Dodane pole wyboru nickName -->
+    <select id="nickName" name="nickName">
         <option th:each="user : ${users}" th:value="${user.nickName}" th:text="${user.nickName}"></option>
     </select>
     <br>
